@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Ruby Extension">
+      <UniqueIdentifier>{7f7f3f0c-616e-46a3-9020-387efc553f1f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Ruby Utils">
+      <UniqueIdentifier>{400309c6-8f0c-438e-ae1c-6296b195afd4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Ruby Utils\Header Files">
+      <UniqueIdentifier>{4ac75d95-cc96-4f48-ac2a-85938999c9d8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Ruby Utils\Source Files">
+      <UniqueIdentifier>{3781bb9e-b80e-4ed6-8f7c-9ed09b90b2b7}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="RubyExtension.def">
+      <Filter>Ruby Extension</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\RubyUtils\RubyLib.h">
+      <Filter>Ruby Utils\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\RubyUtils\RubyUtils.h">
+      <Filter>Ruby Utils\Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\RubyUtils\RubyUtils.cpp">
+      <Filter>Ruby Utils\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\SUEX_HelloWorld.cpp">
+      <Filter>Ruby Extension</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

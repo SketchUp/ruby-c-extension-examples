@@ -1,0 +1,5 @@
+The included SWIG 3.0.0 source code and binaries were downloaded from the official SWIG project website:
+
+http://www.swig.org/download.html
+
+SWIG source code can be downloaded from http://sourceforge.net/projects/swig
