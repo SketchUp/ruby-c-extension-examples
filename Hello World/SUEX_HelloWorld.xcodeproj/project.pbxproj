@@ -286,7 +286,10 @@
 					"$(inherited)",
 					"\"$(SRCROOT)/../ThirdParty/lib/mac/2.0\"",
 				);
-				HEADER_SEARCH_PATHS = ../ThirdParty/include/ruby/2.0/mac;
+				HEADER_SEARCH_PATHS = (
+					../ThirdParty/include/ruby/2.0/mac,
+					"../ThirdParty/include/ruby/2.0/mac/i386-darwin12.4.0",
+				);
 			};
 			name = Debug;
 		};
@@ -301,7 +304,10 @@
 					"$(inherited)",
 					"\"$(SRCROOT)/../ThirdParty/lib/mac/2.0\"",
 				);
-				HEADER_SEARCH_PATHS = ../ThirdParty/include/ruby/2.0/mac;
+				HEADER_SEARCH_PATHS = (
+					../ThirdParty/include/ruby/2.0/mac,
+					"../ThirdParty/include/ruby/2.0/mac/i386-darwin12.4.0",
+				);
 			};
 			name = Release;
 		};
