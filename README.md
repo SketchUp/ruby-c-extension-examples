@@ -1,6 +1,6 @@
 # SketchUp Ruby C/C++ Extension Examples
 
-This project include the Ruby lib and header files used by SketchUp.
+This project includes the Ruby lib and header files used by SketchUp.
 
 ## C++ Example - Hello World
 
