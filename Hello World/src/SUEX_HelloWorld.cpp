@@ -1,4 +1,3 @@
-
 #include "RubyUtils/RubyUtils.h"
 
 
@@ -8,7 +7,6 @@ VALUE hello_world() {
 
 // Load this module from Ruby using:
 //   require 'SUEX_HelloWorld'
-extern "C"
 void Init_SUEX_HelloWorld()
 {
   VALUE mSUEX_HelloWorld = rb_define_module("SUEX_HelloWorld");
