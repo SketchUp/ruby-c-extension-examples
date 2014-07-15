@@ -14,3 +14,17 @@ Notes on how the solution is set up:
 ### Xcode 4.5
 
 Tested to also work on Xcode 4.6 and Xcode 5.
+
+### Ruby
+
+Notes on how to call the Hello World Example from Ruby :
+
+* first copy the file SUEX_HelloWorld.so to the Plugins folder
+
+* call the extension using the following lines 
+
+require 'SUEX_HelloWorld'
+
+puts SUEX_HelloWorld::CEXT_VERSION
+
+puts SUEX_HelloWorld::hello_world
