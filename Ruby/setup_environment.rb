@@ -17,5 +17,6 @@ binary_path = File.join(project_path, RELEASE)
 
 pattern = File.join(binary_path, "*.{so,bundle}")
 Dir.glob(pattern).each { |library|
+  puts "Requiring #{library}"
   require library
 }

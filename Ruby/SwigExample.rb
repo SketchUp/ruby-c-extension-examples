@@ -1,7 +1,9 @@
 # Load the C extension
 ruby_path = File.dirname(__FILE__)
 project_path = File.expand_path( File.join(ruby_path, '..') )
-binary_path = File.join(project_path, 'Debug (2.0)', 'SUEX_UsingSWIG.so')
+# Use one of the following 2 lines for 32 or 64-bit
+#binary_path = File.join(project_path, 'Debug (2.0)', 'SUEX_UsingSWIG.so')
+binary_path = File.join(project_path, 'Debug (2.0)/x64', 'SUEX_UsingSWIG.so')
 require binary_path
 
 # Derive a class from the interface defined in C++
