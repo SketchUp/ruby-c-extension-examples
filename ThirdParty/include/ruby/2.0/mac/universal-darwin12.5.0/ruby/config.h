@@ -42,18 +42,23 @@
 #define HAVE_LOCALE_H 1
 #define HAVE_TIME_H 1
 #define HAVE_SYS_SOCKET_H 1
+#define AC_APPLE_UNIVERSAL_BUILD 1
 #define HAVE_LONG_LONG 1
 #define HAVE_OFF_T 1
 #define SIZEOF_INT 4
 #define SIZEOF_SHORT 2
+#if defined(__LP64__) || defined(__LP64) || defined(_LP64) || defined(LP64)
+#define SIZEOF_LONG 8
+#else
 #define SIZEOF_LONG 4
+#endif
 #define SIZEOF_LONG_LONG 8
 #define SIZEOF___INT64 0
 #define SIZEOF_OFF_T 8
-#define SIZEOF_VOIDP 4
+#define SIZEOF_VOIDP SIZEOF_LONG
 #define SIZEOF_FLOAT 4
 #define SIZEOF_DOUBLE 8
-#define SIZEOF_TIME_T 4
+#define SIZEOF_TIME_T SIZEOF_LONG
 #define PRI_LL_PREFIX "ll"
 #define rb_pid_t pid_t
 #define PIDT2NUM(v) INT2NUM(v)
@@ -91,16 +96,22 @@
 #define NORETURN(x) __attribute__ ((noreturn)) x
 #define DEPRECATED(x) __attribute__ ((deprecated)) x
 #define NOINLINE(x) __attribute__ ((noinline)) x
-#define FUNC_STDCALL(x) __attribute__ ((stdcall)) x
-#define FUNC_CDECL(x) __attribute__ ((cdecl)) x
-#define FUNC_FASTCALL(x) __attribute__ ((fastcall)) x
+#if defined __i386__
+#define FUNC_STDCALL(x) __attribute__ ((stdcall)) x /* only if defined __i386__ */
+#endif /* defined __i386__ */
+#if defined __i386__
+#define FUNC_CDECL(x) __attribute__ ((cdecl)) x /* only if defined __i386__ */
+#endif /* defined __i386__ */
+#if defined __i386__
+#define FUNC_FASTCALL(x) __attribute__ ((fastcall)) x /* only if defined __i386__ */
+#endif /* defined __i386__ */
 #define HAVE_GCC_ATOMIC_BUILTINS 1
 #define UNREACHABLE __builtin_unreachable()
 #define RUBY_FUNC_EXPORTED __attribute__ ((visibility("default"))) extern
 #define HAVE_DECL_SYS_NERR 1
 #define HAVE_LIBDL 1
-#define SIZEOF_SIZE_T 4
-#define SIZEOF_PTRDIFF_T 4
+#define SIZEOF_SIZE_T SIZEOF_LONG
+#define SIZEOF_PTRDIFF_T SIZEOF_SIZE_T
 #define PRI_SIZE_PREFIX "z"
 #define PRI_PTRDIFF_PREFIX "t"
 #define HAVE_STRUCT_STAT_ST_BLKSIZE 1
@@ -135,11 +146,11 @@
 #define HAVE_UINT64_T 1
 #define SIZEOF_UINT64_T 8
 #define HAVE_INTPTR_T 1
-#define SIZEOF_INTPTR_T 4
+#define SIZEOF_INTPTR_T SIZEOF_VOIDP
 #define HAVE_UINTPTR_T 1
-#define SIZEOF_UINTPTR_T 4
+#define SIZEOF_UINTPTR_T SIZEOF_VOIDP
 #define HAVE_SSIZE_T 1
-#define SIZEOF_SSIZE_T 4
+#define SIZEOF_SSIZE_T SIZEOF_SIZE_T
 #define GETGROUPS_T gid_t
 #define RETSIGTYPE void
 #define HAVE_ALLOCA_H 1
@@ -280,9 +291,17 @@
 #define HAVE_PTHREAD_SIGMASK 1
 #define HAVE_PTHREAD_ATTR_INIT 1
 #define HAVE_BACKTRACE 1
+#define HAVE_DLADDR 1
 #define DLEXT_MAXLEN 7
 #define DLEXT ".bundle"
 #define LIBDIR_BASENAME "lib"
 #define HAVE_PTHREAD_H 1
-#define RUBY_EXEC_PREFIX "/Users/bbarin/temp/ruby_install"
+#define LOAD_RELATIVE 1
+#define RUBY_EXEC_PREFIX ""
+#if defined __x86_64__
+#define RUBY_PLATFORM_CPU "x86_64"
+#endif /* defined __x86_64__ */
+#if defined __i386__
+#define RUBY_PLATFORM_CPU "i386"
+#endif /* defined __i386__ */
 #endif /* INCLUDE_RUBY_CONFIG_H */
