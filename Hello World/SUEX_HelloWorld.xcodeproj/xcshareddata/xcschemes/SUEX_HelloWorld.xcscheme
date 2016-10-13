@@ -14,6 +14,20 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
+               BlueprintIdentifier = "E9EA8AC61DAFC10D0029551B"
+               BuildableName = "SUEX_HelloWorld.bundle"
+               BlueprintName = "Ruby 2.2"
+               ReferencedContainer = "container:SUEX_HelloWorld.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
                BlueprintIdentifier = "33CDE5E4182703B100F7C6E8"
                BuildableName = "SUEX_HelloWorld.bundle"
                BlueprintName = "Ruby 2.0"
@@ -43,6 +57,15 @@
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
       </Testables>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "33CDE5E4182703B100F7C6E8"
+            BuildableName = "SUEX_HelloWorld.bundle"
+            BlueprintName = "Ruby 2.0"
+            ReferencedContainer = "container:SUEX_HelloWorld.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </TestAction>
@@ -74,6 +97,15 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "33CDE5E4182703B100F7C6E8"
+            BuildableName = "SUEX_HelloWorld.bundle"
+            BlueprintName = "Ruby 2.0"
+            ReferencedContainer = "container:SUEX_HelloWorld.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">
