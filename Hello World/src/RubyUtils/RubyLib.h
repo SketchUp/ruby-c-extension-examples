@@ -2,6 +2,7 @@
 #define SU_UTILS_RUBYLIB_H_
 
 // Needed for VS2015.
+// TODO(thomthom): Not sure if this apply for Ruby 2.0 build.
 #if _MSC_VER >= 1900
 
 // Ruby was configured for Visual Studio 2010. These macros are needed to
