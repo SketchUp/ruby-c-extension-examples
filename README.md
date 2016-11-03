@@ -13,6 +13,6 @@ Notes on how the solution is set up:
 * The project name must match the name of the `Init_*()` function. Example: If the project name is HelloWorld the init function must be named `Init_HelloWorld`.
 * The init function must be exported in the .def file - named the same as the project.
 
-### Xcode 4.5
+### Xcode 8
 
-Tested to also work on Xcode 4.6 and Xcode 5.
+Xcode project is set up to build targets all the way back to Ruby 1.8.
