@@ -1,8 +1,8 @@
 #ifndef INCLUDE_RUBY_CONFIG_H
 #define INCLUDE_RUBY_CONFIG_H 1
-#if _MSC_VER != 1600
-#error MSC version unmatch: _MSC_VER: 1600 is expected.
-#endif
+//#if _MSC_VER != 1600
+//#error MSC version unmatch: _MSC_VER: 1600 is expected.
+//#endif
 #define RUBY_MSVCRT_VERSION 100
 #define STDC_HEADERS 1
 #define HAVE_SYS_TYPES_H 1
@@ -127,7 +127,7 @@
 #define RUBY_SETJMP(env) _setjmp(env)
 #define RUBY_LONGJMP(env,val) longjmp(env,val)
 #define RUBY_JMP_BUF jmp_buf
-#define inline __inline
+//#define inline __inline
 #define NEED_IO_SEEK_BETWEEN_RW 1
 #define STACK_GROW_DIRECTION -1
 #define CANONICALIZATION_FOR_MATHN 1
