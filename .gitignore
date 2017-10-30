@@ -8,8 +8,7 @@ Release (*.*)/
 *.sdf
 *.suo
 ipch/
-*.VC.db
-*.VC.VC.opendb
+*.VC.*
 
 xcuserdata/
 
