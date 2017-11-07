@@ -55,6 +55,7 @@
     <RootNamespace>SUEX_HelloWorld</RootNamespace>
     <Keyword>MFCDLLProj</Keyword>
     <ProjectName>SUEX_HelloWorld</ProjectName>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug (2.0)|Win32'" Label="Configuration">
@@ -132,62 +133,62 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug (1.8)|Win32'">
     <LocalDebuggerCommand>$(ProgramFiles)\SketchUp\SketchUp 2013\SketchUp.exe</LocalDebuggerCommand>
     <DebuggerFlavor>WindowsLocalDebugger</DebuggerFlavor>
-    <LocalDebuggerCommandArguments>-RubyStartup "$(SolutionDir)Ruby\$(Configuration).rb"</LocalDebuggerCommandArguments>
+    <LocalDebuggerCommandArguments>-RubyStartup "$(SolutionDir)Ruby\launch_sketchup.rb" -RubyStartupArg "$(Configuration):$(PlatformTarget)"</LocalDebuggerCommandArguments>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug (1.8)|x64'">
     <LocalDebuggerCommand>$(ProgramFiles)\SketchUp\SketchUp 2013\SketchUp.exe</LocalDebuggerCommand>
     <DebuggerFlavor>WindowsLocalDebugger</DebuggerFlavor>
-    <LocalDebuggerCommandArguments>-RubyStartup "$(SolutionDir)Ruby\$(Configuration).rb"</LocalDebuggerCommandArguments>
+    <LocalDebuggerCommandArguments>-RubyStartup "$(SolutionDir)Ruby\launch_sketchup.rb" -RubyStartupArg "$(Configuration):$(PlatformTarget)"</LocalDebuggerCommandArguments>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release (1.8)|Win32'">
     <LocalDebuggerCommand>$(ProgramFiles)\SketchUp\SketchUp 2013\SketchUp.exe</LocalDebuggerCommand>
     <DebuggerFlavor>WindowsLocalDebugger</DebuggerFlavor>
-    <LocalDebuggerCommandArguments>-RubyStartup "$(SolutionDir)Ruby\$(Configuration).rb"</LocalDebuggerCommandArguments>
+    <LocalDebuggerCommandArguments>-RubyStartup "$(SolutionDir)Ruby\launch_sketchup.rb" -RubyStartupArg "$(Configuration):$(PlatformTarget)"</LocalDebuggerCommandArguments>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release (1.8)|x64'">
     <LocalDebuggerCommand>$(ProgramFiles)\SketchUp\SketchUp 2013\SketchUp.exe</LocalDebuggerCommand>
     <DebuggerFlavor>WindowsLocalDebugger</DebuggerFlavor>
-    <LocalDebuggerCommandArguments>-RubyStartup "$(SolutionDir)Ruby\$(Configuration).rb"</LocalDebuggerCommandArguments>
+    <LocalDebuggerCommandArguments>-RubyStartup "$(SolutionDir)Ruby\launch_sketchup.rb" -RubyStartupArg "$(Configuration):$(PlatformTarget)"</LocalDebuggerCommandArguments>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug (2.0)|Win32'">
     <LocalDebuggerCommand>$(ProgramFiles)\SketchUp\SketchUp 2015\SketchUp.exe</LocalDebuggerCommand>
     <DebuggerFlavor>WindowsLocalDebugger</DebuggerFlavor>
-    <LocalDebuggerCommandArguments>-RubyStartup "$(SolutionDir)Ruby\$(Configuration).rb"</LocalDebuggerCommandArguments>
+    <LocalDebuggerCommandArguments>-RubyStartup "$(SolutionDir)Ruby\launch_sketchup.rb" -RubyStartupArg "$(Configuration):$(PlatformTarget)"</LocalDebuggerCommandArguments>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug (2.2)|Win32'">
-    <LocalDebuggerCommand>$(ProgramFiles)\SketchUp\SketchUp 2015\SketchUp.exe</LocalDebuggerCommand>
+    <LocalDebuggerCommand>$(ProgramFiles)\SketchUp\SketchUp 2017\SketchUp.exe</LocalDebuggerCommand>
     <DebuggerFlavor>WindowsLocalDebugger</DebuggerFlavor>
-    <LocalDebuggerCommandArguments>-RubyStartup "$(SolutionDir)Ruby\$(Configuration).rb"</LocalDebuggerCommandArguments>
+    <LocalDebuggerCommandArguments>-RubyStartup "$(SolutionDir)Ruby\launch_sketchup.rb" -RubyStartupArg "$(Configuration):$(PlatformTarget)"</LocalDebuggerCommandArguments>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug (2.0)|x64'">
-    <LocalDebuggerCommand>$(ProgramW6432)\SketchUp\SketchUp 2015\SketchUp.exe</LocalDebuggerCommand>
+    <LocalDebuggerCommand>$(ProgramW6432)\SketchUp\SketchUp 2016\SketchUp.exe</LocalDebuggerCommand>
     <DebuggerFlavor>WindowsLocalDebugger</DebuggerFlavor>
-    <LocalDebuggerCommandArguments>-RubyStartup "$(SolutionDir)Ruby\$(PlatformTarget)\$(Configuration).rb"</LocalDebuggerCommandArguments>
+    <LocalDebuggerCommandArguments>-RubyStartup "$(SolutionDir)Ruby\launch_sketchup.rb" -RubyStartupArg "$(Configuration):$(PlatformTarget)"</LocalDebuggerCommandArguments>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug (2.2)|x64'">
-    <LocalDebuggerCommand>$(ProgramW6432)\SketchUp\SketchUp 2015\SketchUp.exe</LocalDebuggerCommand>
+    <LocalDebuggerCommand>$(ProgramW6432)\SketchUp\SketchUp 2017\SketchUp.exe</LocalDebuggerCommand>
     <DebuggerFlavor>WindowsLocalDebugger</DebuggerFlavor>
-    <LocalDebuggerCommandArguments>-RubyStartup "$(SolutionDir)Ruby\$(PlatformTarget)\$(Configuration).rb"</LocalDebuggerCommandArguments>
+    <LocalDebuggerCommandArguments>-RubyStartup "$(SolutionDir)Ruby\launch_sketchup.rb" -RubyStartupArg "$(Configuration):$(PlatformTarget)"</LocalDebuggerCommandArguments>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release (2.0)|Win32'">
     <LocalDebuggerCommand>$(ProgramFiles)\SketchUp\SketchUp 2015\SketchUp.exe</LocalDebuggerCommand>
     <DebuggerFlavor>WindowsLocalDebugger</DebuggerFlavor>
-    <LocalDebuggerCommandArguments>-RubyStartup "$(SolutionDir)Ruby\$(Configuration).rb"</LocalDebuggerCommandArguments>
+    <LocalDebuggerCommandArguments>-RubyStartup "$(SolutionDir)Ruby\launch_sketchup.rb" -RubyStartupArg "$(Configuration):$(PlatformTarget)"</LocalDebuggerCommandArguments>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release (2.2)|Win32'">
-    <LocalDebuggerCommand>$(ProgramFiles)\SketchUp\SketchUp 2015\SketchUp.exe</LocalDebuggerCommand>
+    <LocalDebuggerCommand>$(ProgramFiles)\SketchUp\SketchUp 2017\SketchUp.exe</LocalDebuggerCommand>
     <DebuggerFlavor>WindowsLocalDebugger</DebuggerFlavor>
-    <LocalDebuggerCommandArguments>-RubyStartup "$(SolutionDir)Ruby\$(Configuration).rb"</LocalDebuggerCommandArguments>
+    <LocalDebuggerCommandArguments>-RubyStartup "$(SolutionDir)Ruby\launch_sketchup.rb" -RubyStartupArg "$(Configuration):$(PlatformTarget)"</LocalDebuggerCommandArguments>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release (2.0)|x64'">
-    <LocalDebuggerCommand>$(ProgramW6432)\SketchUp\SketchUp 2015\SketchUp.exe</LocalDebuggerCommand>
+    <LocalDebuggerCommand>$(ProgramW6432)\SketchUp\SketchUp 2016\SketchUp.exe</LocalDebuggerCommand>
     <DebuggerFlavor>WindowsLocalDebugger</DebuggerFlavor>
-    <LocalDebuggerCommandArguments>-RubyStartup "$(SolutionDir)Ruby\$(PlatformTarget)\$(Configuration).rb"</LocalDebuggerCommandArguments>
+    <LocalDebuggerCommandArguments>-RubyStartup "$(SolutionDir)Ruby\launch_sketchup.rb" -RubyStartupArg "$(Configuration):$(PlatformTarget)"</LocalDebuggerCommandArguments>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release (2.2)|x64'">
-    <LocalDebuggerCommand>$(ProgramW6432)\SketchUp\SketchUp 2015\SketchUp.exe</LocalDebuggerCommand>
+    <LocalDebuggerCommand>$(ProgramW6432)\SketchUp\SketchUp 2017\SketchUp.exe</LocalDebuggerCommand>
     <DebuggerFlavor>WindowsLocalDebugger</DebuggerFlavor>
-    <LocalDebuggerCommandArguments>-RubyStartup "$(SolutionDir)Ruby\$(PlatformTarget)\$(Configuration).rb"</LocalDebuggerCommandArguments>
+    <LocalDebuggerCommandArguments>-RubyStartup "$(SolutionDir)Ruby\launch_sketchup.rb" -RubyStartupArg "$(Configuration):$(PlatformTarget)"</LocalDebuggerCommandArguments>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
   <ImportGroup Label="ExtensionSettings">
@@ -240,13 +241,13 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug (2.0)|x64'">
     <LinkIncremental>true</LinkIncremental>
     <TargetExt>.so</TargetExt>
-    <OutDir>$(SolutionDir)\$(Configuration)\$(Platform)\</OutDir>
+    <OutDir>$(SolutionDir)$(Configuration)\$(Platform)\</OutDir>
     <IntDir>$(Configuration)\$(Platform)\</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug (2.2)|x64'">
     <LinkIncremental>true</LinkIncremental>
     <TargetExt>.so</TargetExt>
-    <OutDir>$(SolutionDir)\$(Configuration)\$(Platform)\</OutDir>
+    <OutDir>$(SolutionDir)$(Configuration)\$(Platform)\</OutDir>
     <IntDir>$(Configuration)\$(Platform)\</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug (1.8)|Win32'">
@@ -256,7 +257,7 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug (1.8)|x64'">
     <LinkIncremental>true</LinkIncremental>
     <TargetExt>.so</TargetExt>
-    <OutDir>$(SolutionDir)\$(Configuration)\$(Platform)\</OutDir>
+    <OutDir>$(SolutionDir)$(Configuration)\$(Platform)\</OutDir>
     <IntDir>$(Configuration)\$(Platform)\</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release (2.0)|Win32'">
@@ -270,13 +271,13 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release (2.0)|x64'">
     <LinkIncremental>false</LinkIncremental>
     <TargetExt>.so</TargetExt>
-    <OutDir>$(SolutionDir)\$(Configuration)\$(Platform)\</OutDir>
+    <OutDir>$(SolutionDir)$(Configuration)\$(Platform)\</OutDir>
     <IntDir>$(Configuration)\$(Platform)\</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release (2.2)|x64'">
     <LinkIncremental>false</LinkIncremental>
     <TargetExt>.so</TargetExt>
-    <OutDir>$(SolutionDir)\$(Configuration)\$(Platform)\</OutDir>
+    <OutDir>$(SolutionDir)$(Configuration)\$(Platform)\</OutDir>
     <IntDir>$(Configuration)\$(Platform)\</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release (1.8)|Win32'">
@@ -286,7 +287,7 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release (1.8)|x64'">
     <LinkIncremental>false</LinkIncremental>
     <TargetExt>.so</TargetExt>
-    <OutDir>$(SolutionDir)\$(Configuration)\$(Platform)\</OutDir>
+    <OutDir>$(SolutionDir)$(Configuration)\$(Platform)\</OutDir>
     <IntDir>$(Configuration)\$(Platform)\</IntDir>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug (2.0)|Win32'">

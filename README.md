@@ -13,6 +13,15 @@ Notes on how the solution is set up:
 * The project name must match the name of the `Init_*()` function. Example: If the project name is HelloWorld the init function must be named `Init_HelloWorld`.
 * The init function must be exported in the .def file - named the same as the project.
 
+#### Debugging
+
+The Visual Studio project is set up to launch SketchUp and then load the built
+Ruby C Extension so you can debug your code. The various build configuration
+is set up to launch different SketchUp versions. Refer to the project
+configuration and make your adjustments as needed:
+
+`SUEX_HelloWorld > Right Click > Configuration Properties > Debugging`
+
 ### Xcode 8
 
 Xcode project is set up to build targets all the way back to Ruby 1.8.
