@@ -9,6 +9,7 @@ Release (*.*)/
 *.suo
 ipch/
 *.VC.*
+.vs/
 
 xcuserdata/
 
