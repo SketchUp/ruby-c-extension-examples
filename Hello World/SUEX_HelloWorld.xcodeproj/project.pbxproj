@@ -17,9 +17,13 @@
 		CE405E81184763D300A77187 /* RubyUtils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 33CDE7B718270A4800F7C6E8 /* RubyUtils.cpp */; };
 		CE405E85184763D300A77187 /* RubyLib.h in Headers */ = {isa = PBXBuildFile; fileRef = 33CDE7B618270A4800F7C6E8 /* RubyLib.h */; };
 		CE405E86184763D300A77187 /* RubyUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 33CDE7B818270A4800F7C6E8 /* RubyUtils.h */; };
+		E939EB2221120EE20023B67B /* SUEX_HelloWorld.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 33CDE7AF182705EB00F7C6E8 /* SUEX_HelloWorld.cpp */; };
+		E939EB2321120EE20023B67B /* RubyUtils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 33CDE7B718270A4800F7C6E8 /* RubyUtils.cpp */; };
+		E939EB2821120EE20023B67B /* RubyLib.h in Headers */ = {isa = PBXBuildFile; fileRef = 33CDE7B618270A4800F7C6E8 /* RubyLib.h */; };
+		E939EB2921120EE20023B67B /* RubyUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 33CDE7B818270A4800F7C6E8 /* RubyUtils.h */; };
+		E939EB30211211400023B67B /* Ruby.Framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E939EB2F211211400023B67B /* Ruby.Framework */; };
 		E9EA8AC81DAFC10D0029551B /* SUEX_HelloWorld.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 33CDE7AF182705EB00F7C6E8 /* SUEX_HelloWorld.cpp */; };
 		E9EA8AC91DAFC10D0029551B /* RubyUtils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 33CDE7B718270A4800F7C6E8 /* RubyUtils.cpp */; };
-		E9EA8ACB1DAFC10D0029551B /* Ruby.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE1590E61847A5A20084B06D /* Ruby.framework */; };
 		E9EA8ACD1DAFC10D0029551B /* RubyLib.h in Headers */ = {isa = PBXBuildFile; fileRef = 33CDE7B618270A4800F7C6E8 /* RubyLib.h */; };
 		E9EA8ACE1DAFC10D0029551B /* RubyUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 33CDE7B818270A4800F7C6E8 /* RubyUtils.h */; };
 		E9EA8AD51DAFC2510029551B /* Ruby.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9EA8AD41DAFC2510029551B /* Ruby.framework */; };
@@ -35,6 +39,8 @@
 		CE1590E61847A5A20084B06D /* Ruby.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Ruby.framework; path = ../ThirdParty/lib/mac/2.0/Ruby.framework; sourceTree = "<group>"; };
 		CE1590E81847A5F10084B06D /* Ruby.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Ruby.framework; path = ../ThirdParty/lib/mac/1.8/Ruby.framework; sourceTree = "<group>"; };
 		CE405E8A184763D300A77187 /* SUEX_HelloWorld.bundle */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = SUEX_HelloWorld.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		E939EB2D21120EE20023B67B /* SUEX_HelloWorld.bundle */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = SUEX_HelloWorld.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		E939EB2F211211400023B67B /* Ruby.Framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Ruby.Framework; sourceTree = "<group>"; };
 		E9EA8AD21DAFC10D0029551B /* SUEX_HelloWorld.bundle */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = SUEX_HelloWorld.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9EA8AD41DAFC2510029551B /* Ruby.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Ruby.framework; path = ../ThirdParty/lib/mac/2.2/Ruby.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -56,12 +62,19 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E939EB2421120EE20023B67B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E939EB30211211400023B67B /* Ruby.Framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E9EA8ACA1DAFC10D0029551B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				E9EA8AD51DAFC2510029551B /* Ruby.framework in Frameworks */,
-				E9EA8ACB1DAFC10D0029551B /* Ruby.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +98,7 @@
 				33CDE5E5182703B200F7C6E8 /* SUEX_HelloWorld.bundle */,
 				CE405E8A184763D300A77187 /* SUEX_HelloWorld.bundle */,
 				E9EA8AD21DAFC10D0029551B /* SUEX_HelloWorld.bundle */,
+				E939EB2D21120EE20023B67B /* SUEX_HelloWorld.bundle */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -92,6 +106,7 @@
 		33CDE7B11827091E00F7C6E8 /* ThirdParty Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				E939EB2E211211400023B67B /* Ruby 2.5 */,
 				E9EA8AD31DAFC23A0029551B /* Ruby 2.2 */,
 				CE405E9418476E2800A77187 /* Ruby 2.0 */,
 				CE405E9518476E3C00A77187 /* Ruby 1.8 */,
@@ -126,6 +141,15 @@
 			name = "Ruby 1.8";
 			sourceTree = "<group>";
 		};
+		E939EB2E211211400023B67B /* Ruby 2.5 */ = {
+			isa = PBXGroup;
+			children = (
+				E939EB2F211211400023B67B /* Ruby.Framework */,
+			);
+			name = "Ruby 2.5";
+			path = ../ThirdParty/lib/mac/2.5;
+			sourceTree = "<group>";
+		};
 		E9EA8AD31DAFC23A0029551B /* Ruby 2.2 */ = {
 			isa = PBXGroup;
 			children = (
@@ -152,6 +176,15 @@
 			files = (
 				CE405E85184763D300A77187 /* RubyLib.h in Headers */,
 				CE405E86184763D300A77187 /* RubyUtils.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E939EB2721120EE20023B67B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E939EB2821120EE20023B67B /* RubyLib.h in Headers */,
+				E939EB2921120EE20023B67B /* RubyUtils.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -201,6 +234,23 @@
 			productReference = CE405E8A184763D300A77187 /* SUEX_HelloWorld.bundle */;
 			productType = "com.apple.product-type.library.dynamic";
 		};
+		E939EB2021120EE20023B67B /* Ruby 2.5 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E939EB2A21120EE20023B67B /* Build configuration list for PBXNativeTarget "Ruby 2.5" */;
+			buildPhases = (
+				E939EB2121120EE20023B67B /* Sources */,
+				E939EB2421120EE20023B67B /* Frameworks */,
+				E939EB2721120EE20023B67B /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Ruby 2.5";
+			productName = "Hello World";
+			productReference = E939EB2D21120EE20023B67B /* SUEX_HelloWorld.bundle */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
 		E9EA8AC61DAFC10D0029551B /* Ruby 2.2 */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = E9EA8ACF1DAFC10D0029551B /* Build configuration list for PBXNativeTarget "Ruby 2.2" */;
@@ -239,6 +289,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
+				E939EB2021120EE20023B67B /* Ruby 2.5 */,
 				E9EA8AC61DAFC10D0029551B /* Ruby 2.2 */,
 				33CDE5E4182703B100F7C6E8 /* Ruby 2.0 */,
 				CE405E7E184763D300A77187 /* Ruby 1.8 */,
@@ -262,6 +313,15 @@
 			files = (
 				CE405E80184763D300A77187 /* SUEX_HelloWorld.cpp in Sources */,
 				CE405E81184763D300A77187 /* RubyUtils.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E939EB2121120EE20023B67B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E939EB2221120EE20023B67B /* SUEX_HelloWorld.cpp in Sources */,
+				E939EB2321120EE20023B67B /* RubyUtils.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -431,6 +491,46 @@
 			};
 			name = Release;
 		};
+		E939EB2B21120EE20023B67B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				CONFIGURATION_BUILD_DIR = "$(SRCROOT)/../Debug (2.5)";
+				CONFIGURATION_TEMP_DIR = "$(PROJECT_TEMP_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/2.5";
+				DYLIB_COMPATIBILITY_VERSION = "";
+				DYLIB_CURRENT_VERSION = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../ThirdParty/lib/mac/2.5\"",
+				);
+				HEADER_SEARCH_PATHS = (
+					../ThirdParty/include/ruby/2.5/mac,
+					"../ThirdParty/include/ruby/2.5/mac/x86_64-darwin14",
+				);
+				VALID_ARCHS = x86_64;
+			};
+			name = Debug;
+		};
+		E939EB2C21120EE20023B67B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				CONFIGURATION_BUILD_DIR = "$(SRCROOT)/../Release (2.5)";
+				CONFIGURATION_TEMP_DIR = "$(PROJECT_TEMP_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/2.5";
+				DYLIB_COMPATIBILITY_VERSION = "";
+				DYLIB_CURRENT_VERSION = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../ThirdParty/lib/mac/2.5\"",
+				);
+				HEADER_SEARCH_PATHS = (
+					../ThirdParty/include/ruby/2.5/mac,
+					"../ThirdParty/include/ruby/2.5/mac/x86_64-darwin14",
+				);
+				VALID_ARCHS = x86_64;
+			};
+			name = Release;
+		};
 		E9EA8AD01DAFC10D0029551B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -497,6 +597,15 @@
 			buildConfigurations = (
 				CE405E88184763D300A77187 /* Debug */,
 				CE405E89184763D300A77187 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E939EB2A21120EE20023B67B /* Build configuration list for PBXNativeTarget "Ruby 2.5" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E939EB2B21120EE20023B67B /* Debug */,
+				E939EB2C21120EE20023B67B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
