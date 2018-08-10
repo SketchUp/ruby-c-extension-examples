@@ -12,6 +12,7 @@ ipch/
 .vs/
 
 xcuserdata/
+/ci-build/
 
 *.sublime-workspace
 
