@@ -9,8 +9,10 @@ Release (*.*)/
 *.suo
 ipch/
 *.VC.*
+.vs/
 
 xcuserdata/
+/ci-build/
 
 *.sublime-workspace
 
