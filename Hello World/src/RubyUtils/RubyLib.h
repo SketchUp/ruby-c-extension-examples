@@ -50,6 +50,7 @@
 // the Ruby headers. This works around that.
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Wsign-conversion"
+#pragma clang diagnostic ignored "-Wdeprecated-register"
 
 #include <ruby.h>
 #ifdef HAVE_RUBY_ENCODING_H
