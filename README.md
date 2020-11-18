@@ -4,7 +4,7 @@ This project includes the Ruby lib and header files used by SketchUp.
 
 ## C++ Example - Hello World
 
-### Visual Studio 2017
+### Visual Studio 2019
 
 (For older Visual Studio versions, check out the commits prior to the VS2017 tag.)
 
