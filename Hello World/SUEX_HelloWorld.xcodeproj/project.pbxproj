@@ -503,6 +503,7 @@
 					../ThirdParty/include/ruby/2.5/mac,
 					"../ThirdParty/include/ruby/2.5/mac/x86_64-darwin14",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
 			};
 			name = Debug;
 		};
@@ -522,6 +523,7 @@
 					../ThirdParty/include/ruby/2.5/mac,
 					"../ThirdParty/include/ruby/2.5/mac/x86_64-darwin14",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
 			};
 			name = Release;
 		};
@@ -541,6 +543,7 @@
 					../ThirdParty/include/ruby/2.7/mac,
 					"../ThirdParty/include/ruby/2.7/mac/x86_64-darwin14",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
 			};
 			name = Debug;
 		};
@@ -560,6 +563,7 @@
 					../ThirdParty/include/ruby/2.7/mac,
 					"../ThirdParty/include/ruby/2.7/mac/x86_64-darwin14",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
 			};
 			name = Release;
 		};
@@ -579,6 +583,7 @@
 					../ThirdParty/include/ruby/2.2/mac,
 					"../ThirdParty/include/ruby/2.2/mac/x86_64-darwin14",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
 			};
 			name = Debug;
 		};
@@ -598,6 +603,7 @@
 					../ThirdParty/include/ruby/2.2/mac,
 					"../ThirdParty/include/ruby/2.2/mac/x86_64-darwin14",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
 			};
 			name = Release;
 		};
