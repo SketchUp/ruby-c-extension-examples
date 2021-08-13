@@ -62,6 +62,20 @@
                ReferencedContainer = "container:SUEX_HelloWorld.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "CEC02B4026C66FCE00934F5F"
+               BuildableName = "SUEX_HelloWorld.bundle"
+               BlueprintName = "Ruby 2.7 Universal"
+               ReferencedContainer = "container:SUEX_HelloWorld.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
       </BuildActionEntries>
    </BuildAction>
    <TestAction
