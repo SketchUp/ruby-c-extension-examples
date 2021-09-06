@@ -40,6 +40,6 @@ The runtimes libraries will usually be on a user machine, but you might experien
 
 Incidentally we have upgraded the Ruby version at the same time as we upgraded the compiler version. But that's just by chance.
 
-Because of this you might want to build your extensions with `/MT`. However, the Ruby config files are not set up for that by default. Hence the need to define from extra macros as seen the [TestUp project](https://github.com/SketchUp/testup-2/blob/master/ruby-c-extension/sketchup-taskbarlist/TaskbarProgress/src/RubyUtils/RubyLib.h). This is because there are some differences between `/MD` and `/MT` that would otherwise create compile errors.
+Because of this you might want to build your extensions with `/MT`. However, the Ruby config files are not set up for that by default. Hence the need to define from extra macros as seen the [TestUp project](https://github.com/SketchUp/testup-2/blob/main/ruby-c-extension/sketchup-taskbarlist/TaskbarProgress/src/RubyUtils/RubyLib.h). This is because there are some differences between `/MD` and `/MT` that would otherwise create compile errors.
 
 Statically linking the CRT in my C extensions means they will be bigger, but you don't have to worry about the user not having the required DLLs.
