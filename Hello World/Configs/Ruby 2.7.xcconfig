@@ -5,4 +5,4 @@
 
 HEADER_SEARCH_PATHS = $(inherited) "../ThirdParty/include/ruby/2.7/mac"
 HEADER_SEARCH_PATHS[arch=arm64] = $(inherited) "../ThirdParty/include/ruby/2.7/mac/arm64-darwin20"
-HEADER_SEARCH_PATHS[arch=x86_64] = $(inherited) "../ThirdParty/include/ruby/2.7/mac/x86_64-darwin14"
+HEADER_SEARCH_PATHS[arch=x86_64] = $(inherited) "../ThirdParty/include/ruby/2.7/mac/x86_64-darwin18"
