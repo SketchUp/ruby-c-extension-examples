@@ -62,20 +62,6 @@
                ReferencedContainer = "container:SUEX_HelloWorld.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
-         <BuildActionEntry
-            buildForTesting = "YES"
-            buildForRunning = "YES"
-            buildForProfiling = "YES"
-            buildForArchiving = "YES"
-            buildForAnalyzing = "YES">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "CEC02B4026C66FCE00934F5F"
-               BuildableName = "SUEX_HelloWorld.bundle"
-               BlueprintName = "Ruby 2.7 Universal"
-               ReferencedContainer = "container:SUEX_HelloWorld.xcodeproj">
-            </BuildableReference>
-         </BuildActionEntry>
       </BuildActionEntries>
    </BuildAction>
    <TestAction
@@ -108,9 +94,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "33CDE5E4182703B100F7C6E8"
+            BlueprintIdentifier = "E99766BF252CB0AD00B1D8E9"
             BuildableName = "SUEX_HelloWorld.bundle"
-            BlueprintName = "Ruby 2.0"
+            BlueprintName = "Ruby 2.7"
             ReferencedContainer = "container:SUEX_HelloWorld.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
