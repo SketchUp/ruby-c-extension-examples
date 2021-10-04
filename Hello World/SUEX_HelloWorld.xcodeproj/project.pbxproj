@@ -542,7 +542,6 @@
 		};
 		E99766C9252CB0AD00B1D8E9 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F99124212707352900BB6525 /* Ruby 2.7.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = YES;
 				CONFIGURATION_BUILD_DIR = "$(SRCROOT)/../Debug (2.7)";
@@ -553,13 +552,13 @@
 					"$(inherited)",
 					"\"$(SRCROOT)/../ThirdParty/lib/mac/2.7-universal\"",
 				);
+				HEADER_SEARCH_PATHS = ../ThirdParty/include/ruby/2.7/mac;
 				MACOSX_DEPLOYMENT_TARGET = 10.13;
 			};
 			name = Debug;
 		};
 		E99766CA252CB0AD00B1D8E9 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F99124212707352900BB6525 /* Ruby 2.7.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = YES;
 				CONFIGURATION_BUILD_DIR = "$(SRCROOT)/../Release (2.7)";
@@ -570,6 +569,7 @@
 					"$(inherited)",
 					"\"$(SRCROOT)/../ThirdParty/lib/mac/2.7-universal\"",
 				);
+				HEADER_SEARCH_PATHS = ../ThirdParty/include/ruby/2.7/mac;
 				MACOSX_DEPLOYMENT_TARGET = 10.13;
 			};
 			name = Release;
