@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "1130"
+   LastUpgradeVersion = "1250"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -94,9 +94,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "33CDE5E4182703B100F7C6E8"
+            BlueprintIdentifier = "E99766BF252CB0AD00B1D8E9"
             BuildableName = "SUEX_HelloWorld.bundle"
-            BlueprintName = "Ruby 2.0"
+            BlueprintName = "Ruby 2.7"
             ReferencedContainer = "container:SUEX_HelloWorld.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
