@@ -284,7 +284,7 @@
 		33CDE5DC182703B100F7C6E8 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 1250;
+				LastUpgradeCheck = 1310;
 				ORGANIZATIONNAME = SketchUp;
 			};
 			buildConfigurationList = 33CDE5DF182703B100F7C6E8 /* Build configuration list for PBXProject "SUEX_HelloWorld" */;
