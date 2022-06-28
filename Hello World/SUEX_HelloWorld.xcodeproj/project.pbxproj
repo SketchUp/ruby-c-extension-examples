@@ -681,6 +681,7 @@
 				);
 				HEADER_SEARCH_PATHS = ../ThirdParty/include/ruby/3.1/mac;
 				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				OTHER_CFLAGS = "-fdeclspec";
 			};
 			name = Debug;
 		};
@@ -698,6 +699,7 @@
 				);
 				HEADER_SEARCH_PATHS = ../ThirdParty/include/ruby/3.1/mac;
 				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				OTHER_CFLAGS = "-fdeclspec";
 			};
 			name = Release;
 		};
