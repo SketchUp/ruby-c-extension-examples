@@ -15,22 +15,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "F9086B122A9E18AD0055AF1F"
-               BuildableName = "Ruby 3.2.bundle"
-               BlueprintName = "Ruby 3.2"
-               ReferencedContainer = "container:SUEX_HelloWorld.xcodeproj">
-            </BuildableReference>
-         </BuildActionEntry>
-         <BuildActionEntry
-            buildForTesting = "YES"
-            buildForRunning = "YES"
-            buildForProfiling = "YES"
-            buildForArchiving = "YES"
-            buildForAnalyzing = "YES">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "F951473B286AF6130054D879"
                BuildableName = "SUEX_HelloWorld.bundle"
-               BlueprintName = "Ruby 3.1"
+               BlueprintName = "Ruby 3.2"
                ReferencedContainer = "container:SUEX_HelloWorld.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
