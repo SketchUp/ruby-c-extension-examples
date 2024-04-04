@@ -4,9 +4,9 @@ This project includes the Ruby lib and header files used by SketchUp.
 
 ## C++ Example - Hello World
 
-### Visual Studio 2019
+### Visual Studio 2022
 
-(For older Visual Studio versions, check out the commits prior to the VS2017 tag.)
+(For older Visual Studio versions, check out the various git tags.)
 
 Notes on how the solution is set up:
 
@@ -22,9 +22,9 @@ configuration and make your adjustments as needed:
 
 `SUEX_HelloWorld > Right Click > Configuration Properties > Debugging`
 
-### Xcode 8
+### Xcode 14
 
-Xcode project is set up to build targets all the way back to Ruby 1.8.
+Xcode project is set up to build targets all the way back to Ruby 2.0.
 
 ## Windows and Runtime DLLs
 
