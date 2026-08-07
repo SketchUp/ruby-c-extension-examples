@@ -21,8 +21,8 @@
       <Configuration>Debug (2.7)</Configuration>
       <Platform>x64</Platform>
     </ProjectConfiguration>
-    <ProjectConfiguration Include="Debug (3.2)|x64">
-      <Configuration>Debug (3.2)</Configuration>
+    <ProjectConfiguration Include="Debug (3.4)|x64">
+      <Configuration>Debug (3.4)</Configuration>
       <Platform>x64</Platform>
     </ProjectConfiguration>
     <ProjectConfiguration Include="Release (2.0)|Win32">
@@ -45,8 +45,8 @@
       <Configuration>Release (2.7)</Configuration>
       <Platform>x64</Platform>
     </ProjectConfiguration>
-    <ProjectConfiguration Include="Release (3.2)|x64">
-      <Configuration>Release (3.2)</Configuration>
+    <ProjectConfiguration Include="Release (3.4)|x64">
+      <Configuration>Release (3.4)</Configuration>
       <Platform>x64</Platform>
     </ProjectConfiguration>
   </ItemGroup>
@@ -87,7 +87,7 @@
     <CharacterSet>Unicode</CharacterSet>
     <PlatformToolset>v143</PlatformToolset>
   </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug (3.2)|x64'" Label="Configuration">
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug (3.4)|x64'" Label="Configuration">
     <ConfigurationType>DynamicLibrary</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
     <CharacterSet>Unicode</CharacterSet>
@@ -128,7 +128,7 @@
     <CharacterSet>Unicode</CharacterSet>
     <PlatformToolset>v143</PlatformToolset>
   </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release (3.2)|x64'" Label="Configuration">
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release (3.4)|x64'" Label="Configuration">
     <ConfigurationType>DynamicLibrary</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
     <WholeProgramOptimization>true</WholeProgramOptimization>
@@ -168,10 +168,10 @@
     <Import Project="..\Ruby 2.7 (x64).props" />
     <Import Project="SWIG.props" />
   </ImportGroup>
-  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug (3.2)|x64'" Label="PropertySheets">
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug (3.4)|x64'" Label="PropertySheets">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
     <Import Project="..\RubyExtension.props" />
-    <Import Project="..\Ruby 3.2 (x64).props" />
+    <Import Project="..\Ruby 3.4 (x64).props" />
     <Import Project="SWIG.props" />
   </ImportGroup>
   <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release (2.0)|Win32'">
@@ -204,10 +204,10 @@
     <Import Project="..\Ruby 2.7 (x64).props" />
     <Import Project="SWIG.props" />
   </ImportGroup>
-  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release (3.2)|x64'" Label="PropertySheets">
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release (3.4)|x64'" Label="PropertySheets">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
     <Import Project="..\RubyExtension.props" />
-    <Import Project="..\Ruby 3.2 (x64).props" />
+    <Import Project="..\Ruby 3.4 (x64).props" />
     <Import Project="SWIG.props" />
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
@@ -234,7 +234,7 @@
     <OutDir>$(SolutionDir)\$(Configuration)\$(Platform)\</OutDir>
     <IntDir>$(Configuration)\$(Platform)\</IntDir>
   </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug (3.2)|x64'">
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug (3.4)|x64'">
     <LinkIncremental>true</LinkIncremental>
     <OutDir>$(SolutionDir)\$(Configuration)\$(Platform)\</OutDir>
     <IntDir>$(Configuration)\$(Platform)\</IntDir>
@@ -262,7 +262,7 @@
     <OutDir>$(SolutionDir)\$(Configuration)\$(Platform)\</OutDir>
     <IntDir>$(Configuration)\$(Platform)\</IntDir>
   </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release (3.2)|x64'">
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release (3.4)|x64'">
     <LinkIncremental>false</LinkIncremental>
     <OutDir>$(SolutionDir)\$(Configuration)\$(Platform)\</OutDir>
     <IntDir>$(Configuration)\$(Platform)\</IntDir>
@@ -317,7 +317,7 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
   </ItemDefinitionGroup>
-  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug (3.2)|x64'">
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug (3.4)|x64'">
     <ClCompile>
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRDLL;SUEX_USINGSWIG_EXPORTS;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
@@ -397,7 +397,7 @@
       <OptimizeReferences>true</OptimizeReferences>
     </Link>
   </ItemDefinitionGroup>
-  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release (3.2)|x64'">
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release (3.4)|x64'">
     <ClCompile>
       <Optimization>MaxSpeed</Optimization>
       <FunctionLevelLinking>true</FunctionLevelLinking>
@@ -419,25 +419,25 @@
       <Command Condition="'$(Configuration)|$(Platform)'=='Debug (2.2)|x64'">"$(SolutionDir)ThirdParty\bin\win32\swig\swig.exe" -c++ -Wall -o "$(ProjectDir)src/Swig_output.cpp" -I"$(ProjectDir)src" -ruby -noautorename -cppcast "%(FullPath)"</Command>
       <Command Condition="'$(Configuration)|$(Platform)'=='Debug (2.5)|x64'">"$(SolutionDir)ThirdParty\bin\win32\swig\swig.exe" -c++ -Wall -o "$(ProjectDir)src/Swig_output.cpp" -I"$(ProjectDir)src" -ruby -noautorename -cppcast "%(FullPath)"</Command>
       <Command Condition="'$(Configuration)|$(Platform)'=='Debug (2.7)|x64'">"$(SolutionDir)ThirdParty\bin\win32\swig\swig.exe" -c++ -Wall -o "$(ProjectDir)src/Swig_output.cpp" -I"$(ProjectDir)src" -ruby -noautorename -cppcast "%(FullPath)"</Command>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Debug (3.2)|x64'">"$(SolutionDir)ThirdParty\bin\win32\swig\swig.exe" -c++ -Wall -o "$(ProjectDir)src/Swig_output.cpp" -I"$(ProjectDir)src" -ruby -noautorename -cppcast "%(FullPath)"</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug (3.4)|x64'">"$(SolutionDir)ThirdParty\bin\win32\swig\swig.exe" -c++ -Wall -o "$(ProjectDir)src/Swig_output.cpp" -I"$(ProjectDir)src" -ruby -noautorename -cppcast "%(FullPath)"</Command>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug (2.0)|Win32'">$(ProjectDir)src/Swig_output.cpp</Outputs>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug (2.0)|x64'">$(ProjectDir)src/Swig_output.cpp</Outputs>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug (2.2)|x64'">$(ProjectDir)src/Swig_output.cpp</Outputs>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug (2.5)|x64'">$(ProjectDir)src/Swig_output.cpp</Outputs>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug (2.7)|x64'">$(ProjectDir)src/Swig_output.cpp</Outputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug (3.2)|x64'">$(ProjectDir)src/Swig_output.cpp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug (3.4)|x64'">$(ProjectDir)src/Swig_output.cpp</Outputs>
       <Command Condition="'$(Configuration)|$(Platform)'=='Release (2.0)|Win32'">"$(SolutionDir)ThirdParty\bin\win32\swig\swig.exe" -c++ -Wall -o "$(ProjectDir)src/Swig_output.cpp" -I"$(ProjectDir)src" -ruby -noautorename -cppcast "%(FullPath)"</Command>
       <Command Condition="'$(Configuration)|$(Platform)'=='Release (2.0)|x64'">"$(SolutionDir)ThirdParty\bin\win32\swig\swig.exe" -c++ -Wall -o "$(ProjectDir)src/Swig_output.cpp" -I"$(ProjectDir)src" -ruby -noautorename -cppcast "%(FullPath)"</Command>
       <Command Condition="'$(Configuration)|$(Platform)'=='Release (2.2)|x64'">"$(SolutionDir)ThirdParty\bin\win32\swig\swig.exe" -c++ -Wall -o "$(ProjectDir)src/Swig_output.cpp" -I"$(ProjectDir)src" -ruby -noautorename -cppcast "%(FullPath)"</Command>
       <Command Condition="'$(Configuration)|$(Platform)'=='Release (2.5)|x64'">"$(SolutionDir)ThirdParty\bin\win32\swig\swig.exe" -c++ -Wall -o "$(ProjectDir)src/Swig_output.cpp" -I"$(ProjectDir)src" -ruby -noautorename -cppcast "%(FullPath)"</Command>
       <Command Condition="'$(Configuration)|$(Platform)'=='Release (2.7)|x64'">"$(SolutionDir)ThirdParty\bin\win32\swig\swig.exe" -c++ -Wall -o "$(ProjectDir)src/Swig_output.cpp" -I"$(ProjectDir)src" -ruby -noautorename -cppcast "%(FullPath)"</Command>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Release (3.2)|x64'">"$(SolutionDir)ThirdParty\bin\win32\swig\swig.exe" -c++ -Wall -o "$(ProjectDir)src/Swig_output.cpp" -I"$(ProjectDir)src" -ruby -noautorename -cppcast "%(FullPath)"</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release (3.4)|x64'">"$(SolutionDir)ThirdParty\bin\win32\swig\swig.exe" -c++ -Wall -o "$(ProjectDir)src/Swig_output.cpp" -I"$(ProjectDir)src" -ruby -noautorename -cppcast "%(FullPath)"</Command>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Release (2.0)|Win32'">$(ProjectDir)src/Swig_output.cpp</Outputs>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Release (2.0)|x64'">$(ProjectDir)src/Swig_output.cpp</Outputs>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Release (2.2)|x64'">$(ProjectDir)src/Swig_output.cpp</Outputs>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Release (2.5)|x64'">$(ProjectDir)src/Swig_output.cpp</Outputs>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Release (2.7)|x64'">$(ProjectDir)src/Swig_output.cpp</Outputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release (3.2)|x64'">$(ProjectDir)src/Swig_output.cpp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release (3.4)|x64'">$(ProjectDir)src/Swig_output.cpp</Outputs>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
