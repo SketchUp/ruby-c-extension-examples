@@ -57,7 +57,7 @@
 		F9086B1E2A9E18AD0055AF1F /* SUEX_HelloWorld.bundle */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = SUEX_HelloWorld.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9086B202A9E19150055AF1F /* Ruby.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Ruby.framework; path = ../ThirdParty/lib/mac/3.2/Ruby.framework; sourceTree = "<group>"; };
 		F99D56203025F7DB001BFCC0 /* SUEX_HelloWorld.bundle */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = SUEX_HelloWorld.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
-		F99D56223025F810001BFCC0 /* Ruby.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Ruby.framework; path = ../../ThirdParty/lib/mac/3.4/Ruby.framework; sourceTree = "<group>"; };
+		F99D56223025F810001BFCC0 /* Ruby.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Ruby.framework; path = ../ThirdParty/lib/mac/3.4/Ruby.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -215,7 +215,7 @@
 			children = (
 				F99D56223025F810001BFCC0 /* Ruby.framework */,
 			);
-			path = "Ruby 3.4";
+			name = "Ruby 3.4";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
